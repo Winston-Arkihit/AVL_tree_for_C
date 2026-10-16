@@ -16,7 +16,7 @@ typedef struct KNOT{
 knot* create_knot(int value) {
     knot* new_node = (knot*)malloc(sizeof(knot));
     new_node->knot_value = value;
-    new_node->height = 0; // в начале высота 0, так как детей нет
+    new_node->height = 0; // height = 0, because no height
     new_node->pointer_to_left = NULL;
     new_node->pointer_to_right = NULL;
     return new_node;
